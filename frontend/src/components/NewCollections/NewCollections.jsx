@@ -10,7 +10,7 @@ const NewCollections = () => {
     const fetchNewCollections = async () => {
       try {
         // Fetch only "new" products from the backend API
-        const response = await axios.get("http://localhost:5000/api/products?type=new");
+        const response = await axios.get("https://easyhome-web.onrender.com/api/products?type=new");
         setNewCollections(response.data);
       } catch (error) {
         console.error("Error fetching new collections:", error.message);

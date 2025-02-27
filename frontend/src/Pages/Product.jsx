@@ -15,7 +15,7 @@ const Product = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`); // Fetch product data by productId
+        const response = await fetch(`https://easyhome-web.onrender.com/api/products/${productId}`); // Fetch product data by productId
         if (!response.ok) {
           throw new Error("Product not found");
         }

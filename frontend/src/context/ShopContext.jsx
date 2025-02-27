@@ -19,7 +19,7 @@ const ShopContextProvider = (props) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products"); // Backend API endpoint
+        const response = await axios.get("https://easyhome-web.onrender.com/api/products"); // Backend API endpoint
         console.log(response);
         if (!response.data) {
           throw new Error("No products found.");

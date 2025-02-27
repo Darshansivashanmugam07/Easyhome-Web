@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');  // Ensure mongoose is imported
-const Product = require('../models/product');
+const Product = require('../models/Product');
 
 // Fetch all products
 const getProducts = async (req, res) => {
